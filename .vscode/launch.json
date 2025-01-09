@@ -1,0 +1,18 @@
+{
+    "configurations": [
+    {
+        "type": "lldb",
+        "request": "launch",
+        "name": "Launch",
+        "program": "${workspaceFolder}/tutorial_debug",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "env": {
+            "ASAN_OPTIONS": "detect_leaks=0"
+        },
+        "stdio": ["unique-3.txt", null, null]
+                
+
+    }
+    ]
+}
